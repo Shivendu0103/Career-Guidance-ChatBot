@@ -1,3 +1,9 @@
+
+import nltk
+import os
+
+nltk.data.path.append(os.path.join(os.getcwd(), "nltk_data"))
+
 import nltk
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
