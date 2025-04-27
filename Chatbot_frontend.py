@@ -8,10 +8,13 @@ import streamlit as st
 from streamlit_chat import message
 from streamlit_extras.colored_header import colored_header
 from streamlit_extras.add_vertical_space import add_vertical_space
+
+import os
 import nltk
-nltk.download('stopwords')
-nltk.download("punkt")
-nltk.download('wordnet')
+
+nltk.data.path.append(os.path.join(os.getcwd(), "nltk_data"))
+
+
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
