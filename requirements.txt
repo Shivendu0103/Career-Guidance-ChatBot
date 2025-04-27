@@ -1,0 +1,14 @@
+keras
+matplotlib-inline
+numpy
+pandas
+protobuf
+scikit-learn
+scipy
+streamlit
+nltk
+tensorflow
+Pillow
+streamlit-chat
+streamlit-extras
+certifi
