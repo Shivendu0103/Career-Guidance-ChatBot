@@ -24,7 +24,7 @@ import random
 
 # <========================================================== Load Assets =========================================================================>
 model = load_model('chatbot_model.h5')
-with open('C:/Users/shivendu/Desktop/code/chatbot/Career-Guidance-AI-bot/intents3.json') as file:
+with open('intents3.json') as file:
     intents = json.load(file)
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
@@ -69,7 +69,7 @@ def generate_response(prompt):
     return chatbot_response(prompt)
 
 # <========================================================= Streamlit UI Setup (Final Version) ===============================================================>
-im = Image.open(r'C:\Users\shivendu\Desktop\code\chatbot\Career-Guidance-AI-bot\boy.png')
+im = Image.open('boy.png')
 st.set_page_config(layout="wide", page_title="Career Guidance ChatBot", page_icon=im)
 
 
