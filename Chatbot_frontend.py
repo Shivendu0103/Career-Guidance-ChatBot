@@ -99,7 +99,7 @@ with st.sidebar:
     ## About
     This app has been developed by students of CGC Jhanjeri:
 
-    - Kumar Shivendu [2338465]  
+    - Shivendu Sinha [2338465]  
     - Aayush Thakur [2338382]  
     - Ayush Kumar [2338426]  
     - Abhay Singh Rawat [2338385]  
