@@ -6,7 +6,7 @@ protobuf
 scikit-learn
 scipy
 streamlit
-nltk
+nltk==3.8.1
 tensorflow
 Pillow
 streamlit-chat
