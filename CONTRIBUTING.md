@@ -18,6 +18,7 @@ You can contribute in the following ways:
 2. Clone your fork:
    ```bash
    git clone https://github.com/Shivendu0103/Career-Guidance-ChatBot
+   ```
    
 3. Create a new branch:
 
