@@ -5,10 +5,19 @@ from streamlit_extras.colored_header import colored_header
 from streamlit_extras.add_vertical_space import add_vertical_space
 
 
+#import os
+#import nltk
+#nltk.download('wordnet')
+#nltk.download('omw-1.4')
 import os
 import nltk
-nltk.download('wordnet')
-nltk.download('omw-1.4')
+
+nltk_data_path = "/tmp/nltk_data"
+os.makedirs(nltk_data_path, exist_ok=True)
+nltk.download('wordnet', download_dir=nltk_data_path)
+nltk.download('omw-1.4', download_dir=nltk_data_path)
+nltk.data.path.append(nltk_data_path)
+
 
 # Set nltk data path BEFORE importing anything related
 # Ensure WordNet and punkt are downloaded at runtime
