@@ -8,7 +8,17 @@ import os
 import nltk
 
 # Set nltk data path BEFORE importing anything related
-nltk.data.path.append(os.path.join(os.getcwd(), "nltk_data"))
+# Ensure WordNet and punkt are downloaded at runtime
+try:
+    nltk.data.find('corpora/wordnet')
+except LookupError:
+    nltk.download('wordnet')
+
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
 
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
