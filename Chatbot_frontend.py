@@ -4,8 +4,11 @@ from streamlit_chat import message
 from streamlit_extras.colored_header import colored_header
 from streamlit_extras.add_vertical_space import add_vertical_space
 
+
 import os
 import nltk
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 
 # Set nltk data path BEFORE importing anything related
 # Ensure WordNet and punkt are downloaded at runtime
