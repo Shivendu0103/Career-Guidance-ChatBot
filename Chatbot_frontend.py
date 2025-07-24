@@ -103,6 +103,7 @@ with st.sidebar:
     - Aayush Thakur [2338382]  
     - Ayush Kumar [2338426]  
     - Abhay Singh Rawat [2338385]  
+    - Uday Kumar Mandal [2338552]
     ''')
     add_vertical_space(5)
 
